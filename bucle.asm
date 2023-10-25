@@ -49,7 +49,7 @@ END INICIO
 
     ;Overflow Flag (OF): Se establece si una operación aritmética produce un resultado que es demasiado grande para que se ajuste en el destino asignado.
 
-    ;Carry Flag (CF): Se establece si una operación produce un acarreo hacia fuera o un préstamo hacia un bit de orden superior.
+    ;Carry Flag (CF): Se establece si una operación produce un acarreo hacia fuera (un error) o un préstamo hacia un bit de orden superior.
 
     ;Parity Flag (PF): Se establece si el número de bits establecidos en el resultado es par.
 ;Según el estado en que se encuentren las banderas, existen operaciones de evaluación que saltan al inicio del bucle (donde está la etiqueta de inicio en el código)

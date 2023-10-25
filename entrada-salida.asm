@@ -87,7 +87,7 @@ toString PROC                                        ;procedimiento para convert
     
                 ADD    DL, '0'                       ; Convertir el residuo a su representación ASCII
 
-                MOV    [cadena + DI], DL             ;Almacena el residuo en la cadena.
+                MOV    [cadena + DI], DL             ;Almacena el residuo en la cadena. Se usa DI y no CX, porque no puede usarse CX por cuestión de arquitectura x86 como índice
                 DEC    DI                            ;incrementa el contador de la cadena
 
   ; Comprobar si aún quedan dígitos
